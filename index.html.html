@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Solapur Weaves</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"><style>
+body {font-family: 'Poppins', sans-serif; margin:0; background:#f5f5f5;}
+header {background: linear-gradient(135deg,#8b0000,#b22222); color:white; text-align:center; padding:60px 20px;}
+header h1{margin:0; font-size:42px;}
+header p{font-size:18px; opacity:0.9;}
+nav{background:#222; padding:12px; text-align:center;}
+nav a{color:white; margin:15px; text-decoration:none; font-weight:500;}
+nav a:hover{color:#ffcccb;}
+section{padding:50px 20px; max-width:1100px; margin:auto;}
+h2{text-align:center; color:#8b0000; margin-bottom:25px;}
+.about-box, .history-box, .contact-box{background:white; padding:25px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+.products{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:25px;}
+.product{background:white; border-radius:15px; box-shadow:0 6px 16px rgba(0,0,0,0.12); overflow:hidden; text-align:center; transition:transform 0.3s;}
+.product:hover{transform:translateY(-6px);}
+.product img{width:100%; height:220px; object-fit:cover;}
+.product h3{margin:15px 0 5px;}
+.product p{font-size:14px; padding:0 10px;}
+.product .price{font-weight:600; color:#b22222; margin-top:5px;}
+.product .discount{font-size:12px; color:#555; text-decoration: line-through; margin-left:5px;}
+button{background:#8b0000; color:white; padding:12px 18px; border:none; border-radius:25px; margin:15px 0 20px; cursor:pointer; font-weight:600;}
+button:hover{background:#a80000;}
+.gallery{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
+.gallery img{width:100%; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,0.12);}
+footer{background:#222; color:white; text-align:center; padding:18px; margin-top:40px;}
+</style></head><body>
+<header>
+<h1>Solapur Weaves</h1>
+<p>Traditional Comfort - Timeless Craftsmanship</p>
+</header><nav>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#gallery">Gallery</a>
+<a href="#history">Heritage</a>
+<a href="#contact">Contact</a>
+</nav><section id="about">
+<h2>About Solapur Weaves</h2>
+<div class="about-box">
+Solapur Weaves are renowned handwoven textiles from Solapur, Maharashtra. Famous for their durability, vibrant colors, and comfort, they reflect India’s deep-rooted weaving tradition passed down through generations.
+</div>
+</section><section id="products">
+<h2>Our Products</h2>
+<div class="products"><div class="product">
+<img src="https://tiimg.tistatic.com/fp/2/003/155/solapur-chaddar-478.jpg" alt="Classic Solapur Weave">
+<h3>Classic Solapur Weave</h3>
+<p>Soft, breathable, and perfect for everyday comfort.</p>
+<p class="price">&#8377;750 <span class="discount">&#8377;950</span></p>
+<button onclick="buy('Classic Solapur Weave')">Buy Now</button>
+</div><div class="product">
+<img src="https://m.media-amazon.com/images/I/91REDAdsttL._AC_UY1100_.jpg" alt="Designer Solapur Weave">
+<h3>Designer Solapur Weave</h3>
+<p>Traditional patterns blended with modern aesthetics.</p>
+<p class="price">&#8377;1200 <span class="discount">&#8377;1500</span></p>
+<button onclick="buy('Designer Solapur Weave')">Buy Now</button>
+</div><div class="product">
+<img src="https://cpimg.tistatic.com/07482405/b/4/Pure-Cotton-Printed-Solapur-Chaddar.jpg" alt="Premium Solapur Weave">
+<h3>Premium Solapur Weave</h3>
+<p>Luxury fabric with rich colors and fine finishing.</p>
+<p class="price">&#8377;1800 <span class="discount">&#8377;2200</span></p>
+<button onclick="buy('Premium Solapur Weave')">Buy Now</button>
+</div></div>
+</section><section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://d2hijos0r2m9rf.cloudfront.net/uploads/blog_image/blog_525.jpg" alt="Solapur Weave">
+<img src="https://www.ambikastores.com/cdn/shop/files/20240802_123749-Photoroom.jpg" alt="Solapur Weave">
+<img src="https://tiimg.tistatic.com/fp/1/008/023/solapur-designer-printed-chaddar-425.jpg" alt="Solapur Weave">
+</div>
+</section><section id="history">
+<h2>History & Heritage</h2>
+<div class="history-box">
+The Solapur weaving industry dates back over 150 years and is globally known for Jacquard weaving. Solapur Weaves hold a Geographical Indication (GI) tag, ensuring authenticity and preserving India’s cultural heritage.
+</div>
+</section><section id="contact">
+<h2>Contact Us</h2>
+<div class="contact-box">
+<p>Email: solapurchaddar@example.com</p>
+<p>Phone: +91 98765 43210</p>
+<p>Solapur, Maharashtra, India</p>
+</div>
+</section><footer>
+© 2026 Solapur Weaves | Celebrating Indian Textile Heritage
+</footer><script>
+function buy(item){
+  alert('Thank you for your interest in ' + item + '!');
+}
+</script></body>
+</html>
